@@ -18,6 +18,7 @@ public class TemperatureController {
 
     @GetMapping(params = "celsius") ///temperature?celsius=0
     public TemperatureType getTemperature(@RequestParam double celsius) {
+
         return new TemperatureType(celsius);
     }
 
